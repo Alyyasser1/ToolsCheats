@@ -77,7 +77,7 @@ Contributions are very welcome — whether you're a developer or not.
 
 No problem — just **open an Issue** using the tool suggestion template:
 
-👉 [Suggest a Tool](https://github.com/Alyyasser1/Toolscheats/issues/new?template=suggest_a_tool.md)
+👉 [Suggest a Tool](https://github.com/Alyyasser1/ToolsCheats/issues/new?template=suggest_a_tool.md)
 
 Fill in the tool name, URL, category, pricing, and a short description — I'll take care of adding it.
 
