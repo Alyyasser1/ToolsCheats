@@ -1,4 +1,4 @@
-# 🧰 [Project Name]
+# 🧰 [ToolsCheatsSheet]
 
 A curated directory of the best tools for students, developers, designers, engineers, and more — organized by category and built to help you find the right tool fast.
 
@@ -39,7 +39,7 @@ Contributions are very welcome — whether you're a developer or not.
 1. **Fork** this repository
 2. **Clone** your fork locally
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Alyyasser1/ToolsCheats.git
    ```
 3. **Create a branch** for your change
    ```bash
@@ -77,7 +77,7 @@ Contributions are very welcome — whether you're a developer or not.
 
 No problem — just **open an Issue** using the tool suggestion template:
 
-👉 [Suggest a Tool](https://github.com/your-org/your-repo/issues/new?template=suggest_a_tool.md)
+👉 [Suggest a Tool](https://github.com/Alyyasser1/Toolscheats/issues/new?template=suggest_a_tool.md)
 
 Fill in the tool name, URL, category, pricing, and a short description — I'll take care of adding it.
 
@@ -87,7 +87,7 @@ Fill in the tool name, URL, category, pricing, and a short description — I'll 
 
 Found a broken link, wrong pricing info, or outdated description?
 
-👉 [Open an Issue](https://github.com/your-org/your-repo/issues/new)
+👉 [Open an Issue](https://github.com/Alyyasser1/ToolsCheats/issues/new)
 
 ---
 
