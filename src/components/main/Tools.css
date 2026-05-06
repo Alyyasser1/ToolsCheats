@@ -52,3 +52,22 @@
   gap: var(--space-xl);
   align-items: stretch;
 }
+
+@media (max-width: 768px) {
+  .tools-container {
+    padding: var(--space-xl) 0;
+    gap: var(--space-2xl);
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 300px));
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 250px));
+    gap: var(--space-lg);
+  }
+}

@@ -2,18 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   padding: 0.75rem 1.25rem;
   margin: 1rem auto;
   max-width: fit-content;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--clr-border);
   border-radius: 999px;
   font-size: 1rem;
-  color: var(--color-muted, #aaa);
+  color: var(--clr-text-secondary);
 }
 
 .contribute a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 4px 12px;
   background: var(--clr-amber-glow);
   border: 1px solid var(--clr-amber-border);
@@ -30,4 +33,25 @@
 
 .contribute a:hover {
   border-color: var(--clr-amber);
+}
+
+@media (max-width: 768px) {
+  .contribute {
+    justify-content: flex-start;
+    margin-inline: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contribute {
+    width: 100%;
+    max-width: none;
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+  }
+
+  .contribute a {
+    width: 100%;
+    min-height: 2.75rem;
+  }
 }

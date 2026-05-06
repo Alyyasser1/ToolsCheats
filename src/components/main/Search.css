@@ -89,7 +89,7 @@
   }
 
   .buttons-section {
-    justify-content: flex-start; /* Better for scrolling on mobile */
+    justify-content: center; /* Better for scrolling on mobile */
     overflow-x: auto;
     white-space: nowrap;
     padding-bottom: var(--space-sm);
