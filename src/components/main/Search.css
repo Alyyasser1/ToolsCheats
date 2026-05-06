@@ -1,0 +1,102 @@
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding: var(--space-xl) 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- Search Input Styling --- */
+.input-section {
+  position: relative;
+  width: 100%;
+}
+
+.search-bar {
+  width: 100%;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--clr-bg-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  color: var(--clr-text-primary);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  transition: all var(--transition-base);
+
+  /* Adding a subtle glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.search-bar::placeholder {
+  color: var(--clr-text-muted);
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: var(--clr-amber);
+  background: var(--clr-bg-elevated);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.1);
+}
+
+/* --- Category Buttons Styling --- */
+.buttons-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.search-button {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--clr-bg-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-pill);
+  color: var(--clr-text-secondary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: capitalize;
+}
+
+.search-button:hover {
+  background: var(--clr-bg-hover);
+  border-color: var(--clr-border-hover);
+  color: var(--clr-text-primary);
+  transform: translateY(-1px);
+}
+
+/* --- The Active State (Amber Accent) --- */
+.search-button.active {
+  background: var(--clr-amber-glow);
+  border-color: var(--clr-amber);
+  color: var(--clr-amber);
+  box-shadow: var(--shadow-amber);
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 640px) {
+  .search-section {
+    padding-inline: var(--space-md);
+    gap: var(--space-lg);
+  }
+
+  .search-bar {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .buttons-section {
+    justify-content: flex-start; /* Better for scrolling on mobile */
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: var(--space-sm);
+    scrollbar-width: none; /* Hide scrollbar for cleaner look */
+  }
+
+  .buttons-section::-webkit-scrollbar {
+    display: none;
+  }
+}
