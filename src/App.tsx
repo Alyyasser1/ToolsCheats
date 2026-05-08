@@ -1,6 +1,7 @@
 import Landing from "./components/Landing";
 import { useState } from "react";
 import { tools } from "./data/tools";
+import { Analytics } from "@vercel/analytics/react";
 import Tools from "./components/main/Tools";
 import Search from "./components/main/Search";
 import Footer from "./components/Footer";
@@ -32,6 +33,7 @@ const App = () => {
       ></Search>
       <Tools filteredTools={filteredTools} activeCategory={activeCategory} />
       <Footer />
+      <Analytics />
     </div>
   );
 };
